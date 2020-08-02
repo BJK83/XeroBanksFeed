@@ -48,6 +48,9 @@
     <version>7.1.0</version>
     <scope>test</scope>
 </dependency>
+    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-server-standalone -->
+    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-server-standalone -->
+
 
   </dependencies>
 
