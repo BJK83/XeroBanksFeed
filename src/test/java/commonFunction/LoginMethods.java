@@ -10,7 +10,13 @@ public class LoginMethods extends TestBase {
         driver.findElement(By.xpath("//*[@id=\"email\"]")).sendKeys(login);
         driver.findElement(By.xpath("//*[@id=\"password\"]")).sendKeys(password);
         driver.findElement(By.xpath("//*[@id=\"submitButton\"]")).click();
-        element = driver.findElement(By.xpath("/html/body/div[2]/form/div/div[1]/div/div/header/div/h1"));
-       // wait.until(ExpectedConditions.visibilityOf(element));
+        element = driver.findElement(By.xpath("//*[@data-name='navigation-menu/dashboard']"));
+        wait.until(ExpectedConditions.visibilityOf(element));
+    }
+    
+    public void logoutXero() {
+    	element= driver.findElement(By.xpath("//*[@data-automationid='xrh-addon-user-iconbutton']"));
+    	wait.until(ExpectedConditions.visibilityOf(element));
+    	element= driver.findElement(By.xpath("//a[@data-name='user-menu/log-out']"));
     }
 }

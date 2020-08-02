@@ -31,7 +31,9 @@ public class TestBase {
     }
 
     private static void setChromeDriverProperty(){
-        System.setProperty("webdriver.chrome.driver", "src/resources/chromedriver");
+    	String chromeDirectory = System.getProperty("user.dir") + "\\src\\test\\java\\resources\\chromedriver.exe";
+    	System.out.println(chromeDirectory);
+        System.setProperty("webdriver.chrome.driver", chromeDirectory);
     }
 
 }
